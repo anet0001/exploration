@@ -12,15 +12,37 @@ body {
   background-color: #16cb2a;
   overscroll-behavior-y: none;
   font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+nav {
+  max-width: min(100%, 30rem);
 }
 
 nav li {
   padding: 1rem;
+  list-style: none;
+}
+
+h1,
+h2 {
+  padding: 1rem;
+  max-width: min(100%, 30rem);
+}
+
+h1 {
+  font-size: 1.75rem;
 }
 
 h2 {
-  padding: 1rem;
-  max-width: 30rem;
+  font-size: 1.25rem;
 }
 
 a,
@@ -37,12 +59,6 @@ a + a {
   display: flex;
   gap: 0.5ch;
   color: blue;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 
 .cover {
@@ -75,6 +91,7 @@ img {
 }
 
 .grid__item {
+  position: relative;
 }
 
 .grid__item .image {
