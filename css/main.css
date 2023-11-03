@@ -23,6 +23,22 @@ h2 {
   max-width: 30rem;
 }
 
+a,
+a:visited {
+  color: inherit;
+}
+
+a + a {
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+.link-wrapper {
+  display: flex;
+  gap: 0.5ch;
+  color: blue;
+}
+
 img {
   width: 100%;
   height: auto;
