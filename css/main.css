@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #16cb2a;
+  /* background-color: #16cb2a; */
   overscroll-behavior-y: none;
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
@@ -97,4 +97,11 @@ a + a {
 .grid__item .image {
   position: sticky;
   top: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
 }
