@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #16cb2a;
+  /* background-color: #16cb2a; */
   overscroll-behavior-y: none;
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
