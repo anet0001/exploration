@@ -82,6 +82,11 @@
         context.restore();
       };
 
+      let startInterval = 1000; // Start with an 800ms interval
+      let endInterval = 150; // End with a 200ms interval
+      let duration = 5000; // Duration of the easing in ms
+      let startTime = Date.now();
+
       const animate = () => {
         context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -104,11 +109,15 @@
             }
           }
         }
+        let elapsed = Date.now() - startTime;
+        let interval =
+          startInterval + (endInterval - startInterval) * (elapsed / duration);
+        interval = Math.max(interval, endInterval);
+
+        setTimeout(animate, interval);
       };
 
-      setInterval(() => {
-        animate();
-      }, 200);
+      animate();
     </script>
   </body>
 </html>
